@@ -5,7 +5,7 @@ api base para projeto educacional atlas food, visando estudos e futuramente algo
 CONFIGURAÇÃO
 Para configurar este projeto localmente, siga estas etapas:
 
-Clone o repositório: git clone https://github.com/comeia-academy/alobee-back.git
+Clone o repositório: git clone https://github.com/HigorW02/atlasFood-back.git
 
 Crie um arquivo .env na raiz do projeto e preencha as seguintes variáveis:
 
