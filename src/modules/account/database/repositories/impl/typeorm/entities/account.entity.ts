@@ -20,7 +20,7 @@ export class Account{
     @Column("varchar", {length: 14})
     telefone: string
 
-    @Column({length:2})
+    @Column({})
     avaliação: number
 
 }
