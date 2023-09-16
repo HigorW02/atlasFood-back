@@ -8,7 +8,7 @@ import {
     UserDTO,
     CreateUserDTO,
     UpdateUserDTO
-} from '../../../dtos/userDTO';
+} from '../../../dtos/UserDTO';
 
 @injectable()
 export class UserServiceImpl

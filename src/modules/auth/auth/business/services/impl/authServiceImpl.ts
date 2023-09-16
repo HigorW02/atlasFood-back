@@ -26,12 +26,15 @@ export class AuthServiceImpl implements AuthService {
 
         const user = await this.userService.createItem({
             username: auth.username,
+            email: auth.email,
             password: newPassword
         })
 
         const token = await this.signin({
             username: auth.username,
+            email: auth.email,
             password: auth.password
+            
         });
 
 

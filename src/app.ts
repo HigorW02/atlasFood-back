@@ -17,9 +17,9 @@ app.use(express.json());
 
 app.use("/api", router);
 
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send({'Erro': err.message});
-});
+    app.use((err, req, res, next) => {
+        console.error(err.stack);
+        res.status(500).send({'Erro': err.message});
+    });
 
 export default app;

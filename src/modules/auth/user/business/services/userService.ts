@@ -3,7 +3,7 @@ import {
     UserDTO,  
     CreateUserDTO, 
     UpdateUserDTO 
-} from '../../dtos/userDTO';
+} from '../../dtos/UserDTO';
 
 export interface UserService 
     extends BaseService<UserDTO, CreateUserDTO, UpdateUserDTO> {

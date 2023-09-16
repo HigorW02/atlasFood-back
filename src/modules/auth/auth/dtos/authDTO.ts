@@ -1,9 +1,10 @@
-import { UserDTO } from "../../user/dtos/uerDTO";
 
 
 export class authDTO {
-    username: string
-    password: string
+    username: string;
+    email: string;
+    password: string;
+    
 }
 
 export class tokenDTO {

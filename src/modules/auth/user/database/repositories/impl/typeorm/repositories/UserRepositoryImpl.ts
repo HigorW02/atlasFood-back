@@ -1,6 +1,6 @@
 import { User } from "../entities/user.entity";
 
-import { UserDTO, CreateUserDTO, UpdateUserDTO } from "@/modules/auth/user/dtos/userDTO";
+import { UserDTO, CreateUserDTO, UpdateUserDTO } from "@/modules/auth/user/dtos/UserDTO";
 
 import { BaseRepositoryImpl } from '@/modules/base/BaseRepositoryImpl';
 
@@ -20,9 +20,9 @@ export class UserRepositoryImpl
 
     }
 
-    async createUser(username:string, password: string): Promise<UserDTO> {
+    async createUser(username:string,email: string, password: string): Promise<UserDTO> {
         const user = this.typeormRepository.create({
-            username, password
+            username ,email ,password
         });
 
         return await this.typeormRepository.save(user);
