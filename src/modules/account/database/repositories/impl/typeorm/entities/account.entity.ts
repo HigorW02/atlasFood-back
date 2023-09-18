@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Requests } from "@/modules/company/requests/database/repositories/impl/typeorm/entities/requests.entity";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Account{
@@ -23,4 +24,7 @@ export class Account{
     @Column({})
     avaliação: number
 
+    @OneToOne(() => Requests, Requests => Requests.Account)
+    @JoinColumn()
+    Requests: Requests;    
 }

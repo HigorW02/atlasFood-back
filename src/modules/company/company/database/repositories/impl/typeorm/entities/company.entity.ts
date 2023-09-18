@@ -1,4 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Product } from "@/modules/company/product/database/repositories/impl/typeorm/entities/product.entity";
+import { Requests } from "@/modules/company/requests/database/repositories/impl/typeorm/entities/requests.entity";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Company{
@@ -19,4 +21,12 @@ export class Company{
 
     @Column("varchar", {length: 255})
     endereço: string
+
+    @OneToOne(() => Requests, Requests => Requests.Company)
+    @JoinColumn()
+    Requests: Requests
+
+    @OneToOne(() => Product, Product => Product.Company)
+    @JoinColumn()
+    Product: Product;
 }
