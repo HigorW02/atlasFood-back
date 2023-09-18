@@ -1,9 +1,9 @@
-import { MotoboyService } from "../motoboyService";
+import { MotoboyService } from "../MotoboyService";
 import { BaseServiceImpl } from "@/modules/base/BaseServiceImpl";
 
 import { MotoboyDTO, CreateMotoboyDTO, UpdatedMotoboyDTO } from "@/modules/motoboy/dtos/motoboyDTO";
 
-import { MotoboyRepository } from "@/modules/motoboy/database/repositories/motoboyRepository";
+import { MotoboyRepository } from "@/modules/motoboy/database/repositories/MotoboyRepository";
 import { inject, injectable } from "tsyringe";
 
 @injectable()

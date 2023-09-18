@@ -8,10 +8,10 @@ const dataSource = new DataSource({
     username: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
-    synchronize: false,
+    synchronize: true,
     logging: false,
     namingStrategy: new SnakeNamingStrategy(),
     entities: ["src/modules/**/entities/*.entity.ts"],
 });
 
-export default dataSource;
+export default dataSource;  

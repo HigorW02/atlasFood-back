@@ -1,9 +1,9 @@
-import { CompanyService } from "../companyService";
-import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../../dtos/companyDTO";
+import { CompanyService } from "../CompanyService";
+import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../../dtos/CompanyDTO";
 
 import { BaseServiceImpl } from "@/modules/base/BaseServiceImpl";
 
-import { CompanyRepository } from "../../../database/repositories/companyRepository";
+import { CompanyRepository } from "../../../database/repositories/CompanyRepository";
 import { inject, injectable } from "tsyringe";
 
 @injectable()

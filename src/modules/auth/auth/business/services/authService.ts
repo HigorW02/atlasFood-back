@@ -1,4 +1,4 @@
-import { authDTO, tokenDTO } from "../../dtos/authDTO";
+import { authDTO, tokenDTO } from "../../dtos/AuthDTO";
 
 export interface AuthService {
     signin(auth: authDTO): Promise<tokenDTO>;

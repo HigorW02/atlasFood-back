@@ -1,7 +1,7 @@
-import { ProductDTO, CreateProductDTO, UpdatedProductDTO } from "../../../dtos/productDTO";
+import { ProductDTO, CreateProductDTO, UpdatedProductDTO } from "../../../dtos/ProductDTO";
 import { BaseServiceImpl } from "@/modules/base/BaseServiceImpl";
 
-import { ProductRepository } from "../../../database/repositories/productRepository";
+import { ProductRepository } from "../../../database/repositories/ProductRepository";
 import { inject, injectable } from "tsyringe";
 
 @injectable()

@@ -1,5 +1,5 @@
 import { BaseServiceImpl } from "@/modules/base/BaseServiceImpl";
-import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../dtos/companyDTO";
+import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../dtos/CompanyDTO";
 
 import { BaseService } from "@/modules/base/BaseService";
 

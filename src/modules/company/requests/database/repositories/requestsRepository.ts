@@ -1,4 +1,4 @@
-import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "../../dtos/requestsDTO";
+import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "../../dtos/RequestsDTO";
 import { BaseRepository } from "@/modules/base/BaseRepository";
 
 export interface RequestsRepository

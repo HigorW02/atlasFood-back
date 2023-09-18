@@ -1,4 +1,4 @@
-import { MotoboyService } from "@/modules/motoboy/business/services/motoboyService";
+import { MotoboyService } from "@/modules/motoboy/business/services/MotoboyService";
 
 import { BaseControllerImpl } from "@/modules/base/BaseControllerImpl";
 

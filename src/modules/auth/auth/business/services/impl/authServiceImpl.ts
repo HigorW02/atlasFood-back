@@ -1,9 +1,9 @@
 import { injectable, inject } from 'tsyringe';
 import { AuthHelpers } from '@/config/hash/hash';
 
-import { authDTO, tokenDTO } from '../../../dtos/authDTO';
-import { AuthService } from '../authService';
-import { UserService } from '@/modules/auth/user/business/services/userService';
+import { authDTO, tokenDTO } from '../../../dtos/AuthDTO';
+import { AuthService } from '../AuthService';
+import { UserService } from '@/modules/auth/user/business/services/UserService';
 import { sign } from 'jsonwebtoken';
 
 @injectable()

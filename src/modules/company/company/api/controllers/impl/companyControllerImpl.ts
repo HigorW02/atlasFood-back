@@ -1,5 +1,5 @@
-import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../../dtos/companyDTO";
-import { CompanyService } from "../../../business/services/companyService";
+import { CompanyDTO, CreateCompanyDTO, UpdatedCompanyDTO } from "../../../dtos/CompanyDTO";
+import { CompanyService } from "../../../business/services/CompanyService";
 
 import { BaseControllerImpl } from "@/modules/base/BaseControllerImpl";
 import { inject, injectable } from "tsyringe";

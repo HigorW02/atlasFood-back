@@ -1,4 +1,4 @@
-import { AccountService } from '@/modules/account/business/services/accountService';
+import { AccountService } from '@/modules/account/business/services/AccountService';
 import { inject, injectable } from "tsyringe";
 import { Request, Response } from 'express';
 

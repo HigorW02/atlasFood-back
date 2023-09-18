@@ -1,9 +1,9 @@
-import { RequestsService } from "../requestsService";
+import { RequestsService } from "../RequestsService";
 import { BaseServiceImpl } from "@/modules/base/BaseServiceImpl";
 
-import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "../../../dtos/requestsDTO";
+import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "../../../dtos/RequestsDTO";
 
-import { RequestsRepository } from "../../../database/repositories/requestsRepository";
+import { RequestsRepository } from "../../../database/repositories/RequestsRepository";
 import { inject, injectable } from "tsyringe";
 
 @injectable()

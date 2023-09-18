@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { container } from "tsyringe";
-import { ProductController } from "../controllers/productController";
+import { ProductController } from "../controllers/ProductController";
 
 import baseRoutes from "@/modules/base/base.router";
 

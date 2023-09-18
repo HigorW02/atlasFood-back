@@ -1,29 +1,29 @@
 import { container } from "tsyringe";
 
 //controller
-import { AuthControllerImpl } from "@/modules/auth/auth/api/controllers/impl/authControllerImpl";
-import { AccountControllerImpl } from "@/modules/account/api/controllers/impl/accontControllerImpl";
-import { CompanyControllerImpl } from "@/modules/company/company/api/controllers/impl/companyControllerImpl";
-import { RequestsControllerImpl } from "@/modules/company/requests/api/controllers/impl/requestsControllerImpl";
-import { MotoboyControllerImpl } from "@/modules/motoboy/api/controllers/impl/motoboyControllerImpl";
-import { ProductCoontrollerImpl } from "@/modules/company/product/api/controllers/impl/productControllerImpl";
+import { AuthControllerImpl } from "@/modules/auth/auth/api/controllers/impl/AuthControllerImpl";
+import { AccountControllerImpl } from "@/modules/account/api/controllers/impl/AccontControllerImpl";
+import { CompanyControllerImpl } from "@/modules/company/company/api/controllers/impl/CompanyControllerImpl";
+import { RequestsControllerImpl } from "@/modules/company/requests/api/controllers/impl/RequestsControllerImpl";
+import { MotoboyControllerImpl } from "@/modules/motoboy/api/controllers/impl/MotoboyControllerImpl";
+import { ProductCoontrollerImpl } from "@/modules/company/product/api/controllers/impl/ProductControllerImpl";
 
 //repository
 import { UserRepositoryImpl } from "@/modules/auth/user/database/repositories/impl/typeorm/repositories/UserRepositoryImpl";
-import { AccountRepositoryImpl } from "@/modules/account/database/repositories/impl/typeorm/repositories/accountRepositoryImpl";
-import { CompanyRepositoryImpl } from "@/modules/company/company/database/repositories/impl/typeorm/repositories/companyRepositoryImpl";
-import { MotoboyRepositoryImpl } from "@/modules/motoboy/database/repositories/impl/typeorm/repositories/motoboyRepositoryImpl";
-import { RequestsRepositoryImpl } from "@/modules/company/requests/database/repositories/impl/typeorm/repositories/requestsRepository";
-import { ProductRepositoryImpl } from "@/modules/company/product/database/repositories/impl/typeorm/repositories/productRepositoryImpl";
+import { AccountRepositoryImpl } from "@/modules/account/database/repositories/impl/typeorm/repositories/AccountRepositoryImpl";
+import { CompanyRepositoryImpl } from "@/modules/company/company/database/repositories/impl/typeorm/repositories/CompanyRepositoryImpl";
+import { MotoboyRepositoryImpl } from "@/modules/motoboy/database/repositories/impl/typeorm/repositories/MotoboyRepositoryImpl";
+import { RequestsRepositoryImpl } from "@/modules/company/requests/database/repositories/impl/typeorm/repositories/RequestsRepository";
+import { ProductRepositoryImpl } from "@/modules/company/product/database/repositories/impl/typeorm/repositories/ProductRepositoryImpl";
 
 //service
-import { AuthServiceImpl } from "@/modules/auth/auth/business/services/impl/authServiceImpl";
-import { UserServiceImpl } from "@/modules/auth/user/business/services/impl/userServiceImpl";
+import { AuthServiceImpl } from "@/modules/auth/auth/business/services/impl/AuthServiceImpl";
+import { UserServiceImpl } from "@/modules/auth/user/business/services/impl/UserServiceImpl";
 import { AccountServiceImpl } from "@/modules/account/business/services/impl/accountServiceImpl";
-import { CompanyServiceImpl } from "@/modules/company/company/business/services/impl/companyServiceImpl";
-import { MotoboyServiceImpl } from "@/modules/motoboy/business/services/impl/motoboyServiceImpl";
-import { RequestsServiceImpl } from "@/modules/company/requests/business/services/impl/requestsServiceImpl";
-import { ProductServiceImpl } from "@/modules/company/product/business/services/impl/productServiceImpl";
+import { CompanyServiceImpl } from "@/modules/company/company/business/services/impl/CompanyServiceImpl";
+import { MotoboyServiceImpl } from "@/modules/motoboy/business/services/impl/MotoboyServiceImpl";
+import { RequestsServiceImpl } from "@/modules/company/requests/business/services/impl/RequestsServiceImpl";
+import { ProductServiceImpl } from "@/modules/company/product/business/services/impl/ProductServiceImpl";
 
 //container controller
 container.register( "AuthController", { useClass: AuthControllerImpl});

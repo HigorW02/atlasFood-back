@@ -1,6 +1,6 @@
 import { Requests } from "../entities/requests.entity";
 
-import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "@/modules/company/requests/dtos/requestsDTO";
+import { RequestsDTO, CreateRequestsDTO, UpdatedRequestsDTO } from "@/modules/company/requests/dtos/RequestsDTO";
 
 import { BaseRepositoryImpl } from "@/modules/base/BaseRepositoryImpl";
 
