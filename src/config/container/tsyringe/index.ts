@@ -7,6 +7,7 @@ import { CompanyControllerImpl } from "@/modules/company/company/api/controllers
 import { RequestsControllerImpl } from "@/modules/company/requests/api/controllers/impl/RequestsControllerImpl";
 import { MotoboyControllerImpl } from "@/modules/motoboy/api/controllers/impl/MotoboyControllerImpl";
 import { ProductCoontrollerImpl } from "@/modules/company/product/api/controllers/impl/ProductControllerImpl";
+import { UserControllerImpl } from "@/modules/auth/user/api/controller/impl/userControllerImpl";
 
 //repository
 import { UserRepositoryImpl } from "@/modules/auth/user/database/repositories/impl/typeorm/repositories/UserRepositoryImpl";
@@ -19,7 +20,7 @@ import { ProductRepositoryImpl } from "@/modules/company/product/database/reposi
 //service
 import { AuthServiceImpl } from "@/modules/auth/auth/business/services/impl/AuthServiceImpl";
 import { UserServiceImpl } from "@/modules/auth/user/business/services/impl/UserServiceImpl";
-import { AccountServiceImpl } from "@/modules/account/business/services/impl/accountServiceImpl";
+import { AccountServiceImpl } from "@/modules/account/business/services/impl/AccountServiceImpl";
 import { CompanyServiceImpl } from "@/modules/company/company/business/services/impl/CompanyServiceImpl";
 import { MotoboyServiceImpl } from "@/modules/motoboy/business/services/impl/MotoboyServiceImpl";
 import { RequestsServiceImpl } from "@/modules/company/requests/business/services/impl/RequestsServiceImpl";
@@ -32,6 +33,7 @@ container.register("CompanyController", { useClass: CompanyControllerImpl});
 container.register("RequestsController", { useClass: RequestsControllerImpl});
 container.register("MotoboyController", { useClass: MotoboyControllerImpl});
 container.register("ProductController", { useClass: ProductCoontrollerImpl});
+container.register("UserController", { useClass: UserControllerImpl})
 
 
 //container repository

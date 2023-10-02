@@ -7,7 +7,7 @@ export class Account{
     id: string;
 
     @Column("varchar", {unique:true , length: 14})
-    cpf: string
+    cpf: string 
 
     @Column("varchar", {length: 255})
     nome: string

@@ -8,7 +8,7 @@ export class Product{
     codProduto: number
 
     @Column('varchar', {length: 100})
-    nomeProduto: string
+    nomeProduto: string 
 
     @Column('varchar')
     valor: string

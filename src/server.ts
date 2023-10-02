@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
     res.send("Modular Layer API Node + TypeScript!");
 });
 
+app.post('/', (req,res) => {
+    res.json({ message: 'Formulário recebido com sucesso!' });
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });

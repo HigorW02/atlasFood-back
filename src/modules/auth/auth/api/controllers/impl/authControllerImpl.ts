@@ -17,6 +17,7 @@ export class AuthControllerImpl  implements AuthController
 
     public async signin(req: Request, res: Response): Promise<Response> {
         const auth = req.body;
+        console.log(req.body);
         const signin = await this.authService.signin(auth);
         return res.json(signin);
 
